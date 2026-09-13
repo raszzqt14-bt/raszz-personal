@@ -9,31 +9,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
   <main class="page">
     <section class="card">
-      <div class="profile-wrap">
+      <div class="profile-wrap reveal scale-in">
         <img src="profile.jpg" alt="Profile Rasyaa" class="profile">
       </div>
 
-      <span class="status">● ONLINE</span>
-      <h1>Rasyaa</h1>
-      <p class="username">@rr4sz._</p>
+      <span class="status reveal">● ONLINE</span>
+      <h1 class="reveal delay-1">Rasyaa</h1>
+      <p class="username reveal delay-1">@rr4sz._</p>
 
-      <p class="hero">
+      <p class="hero reveal delay-2">
         Membangun tampilan yang <em>terlihat sederhana</em>
         dan terasa nyaman digunakan.
       </p>
 
-      <p class="intro">
+      <p class="intro reveal delay-2">
         Saya <strong>Rasyaa</strong> — developer yang percaya bahwa website yang baik
         lahir dari struktur yang rapi, desain yang bersih, dan logika yang jelas.
         Fokus saya pada <strong>frontend development</strong>, membangun antarmuka
         responsif dengan HTML, CSS, dan JavaScript tanpa ketergantungan framework.
       </p>
 
+      <div class="quick-links reveal delay-3">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
       <div class="divider"></div>
 
-      <section>
+      <section class="reveal" id="about">
         <p class="eyebrow">RASYAA — PERSONAL WEB 2026</p>
         <h2>Developer yang membangun dari akar.</h2>
         <p class="desc">
@@ -44,12 +53,46 @@
         <div class="stats">
           <div class="stat"><strong>5+</strong><span>Proyek</span></div>
           <div class="stat"><strong>3+</strong><span>Tahun Belajar</span></div>
+          <div class="stat"><strong>100%</strong><span>Vanilla Code</span></div>
+          <div class="stat"><strong>24/7</strong><span>Curious</span></div>
         </div>
       </section>
 
       <div class="divider"></div>
 
-      <section>
+      <section class="reveal" id="projects">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Beberapa hal yang pernah <em>saya bangun.</em></h2>
+        <p class="desc">
+          Proyek kecil sampai sistem yang lebih kompleks. Setiap proyek jadi tempat
+          buat menguji logika, memperbaiki struktur, dan belajar dari bug yang kadang muncul tanpa diundang.
+        </p>
+
+        <div class="projects">
+          <article class="project-card featured">
+            <div class="project-top"><span class="project-number">01</span><span class="project-tag">WEB APP</span></div>
+            <h3>Sistem Aspirasi Sekolah</h3>
+            <p>Sistem pengaduan dan aspirasi siswa dengan autentikasi, kategori laporan, status proses, serta dashboard admin.</p>
+            <div class="tech"><span>PHP Native</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JS</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">02</span><span class="project-tag">PERSONAL</span></div>
+            <h3>Personal Portfolio</h3>
+            <p>Website personal minimalis yang fokus pada identitas, kemampuan, proyek, dan pengalaman pengguna yang ringan.</p>
+            <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">03</span><span class="project-tag">SYSTEM</span></div>
+            <h3>School Management</h3>
+            <p>Eksplorasi sistem data sekolah dengan role-based access untuk siswa, guru, admin, dan pengelolaan nilai.</p>
+            <div class="tech"><span>PHP</span><span>MySQL</span><span>CRUD</span></div>
+          </article>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="reveal" id="skills">
         <p class="eyebrow">TOOLKIT & KEAHLIAN</p>
         <h2>Yang saya kuasai <em>dan terus asah.</em></h2>
         <p class="desc">
@@ -59,52 +102,50 @@
         </p>
 
         <div class="skills">
-          <article class="skill">
-            <span class="skill-icon">&lt;/&gt;</span>
-            <div><h3>HTML</h3><p>Struktur semantik dan fondasi halaman yang rapi.</p></div>
-          </article>
-          <article class="skill">
-            <span class="skill-icon">#</span>
-            <div><h3>CSS</h3><p>Layout responsif dengan Flexbox, Grid, dan desain modern.</p></div>
-          </article>
-          <article class="skill">
-            <span class="skill-icon">JS</span>
-            <div><h3>JavaScript</h3><p>DOM, event handling, validasi, dan vanilla ES6+.</p></div>
-          </article>
-          <article class="skill">
-            <span class="skill-icon">UI</span>
-            <div><h3>Responsive Design</h3><p>Tampilan nyaman di HP, tablet, maupun desktop.</p></div>
-          </article>
-          <article class="skill">
-            <span class="skill-icon">UX</span>
-            <div><h3>UI / UX</h3><p>Hierarki visual, spacing, typography, dan alur yang mudah dipahami.</p></div>
-          </article>
+          <article class="skill"><span class="skill-icon">&lt;/&gt;</span><div><h3>HTML</h3><p>Struktur semantik dan fondasi halaman yang rapi.</p><div class="meter"><i style="--level:92%"></i></div></div></article>
+          <article class="skill"><span class="skill-icon">#</span><div><h3>CSS</h3><p>Layout responsif dengan Flexbox, Grid, dan desain modern.</p><div class="meter"><i style="--level:88%"></i></div></div></article>
+          <article class="skill"><span class="skill-icon">JS</span><div><h3>JavaScript</h3><p>DOM, event handling, validasi, dan vanilla ES6+.</p><div class="meter"><i style="--level:78%"></i></div></div></article>
+          <article class="skill"><span class="skill-icon">PHP</span><div><h3>PHP Native</h3><p>Logic backend, session, CRUD, autentikasi, dan integrasi database.</p><div class="meter"><i style="--level:84%"></i></div></div></article>
+          <article class="skill"><span class="skill-icon">DB</span><div><h3>MySQL</h3><p>Relasi tabel, query, dan pengelolaan data aplikasi.</p><div class="meter"><i style="--level:80%"></i></div></div></article>
+          <article class="skill"><span class="skill-icon">UX</span><div><h3>UI / UX</h3><p>Hierarki visual, spacing, typography, dan alur yang mudah dipahami.</p><div class="meter"><i style="--level:75%"></i></div></div></article>
         </div>
       </section>
 
       <div class="divider"></div>
 
-      <section>
+      <section class="reveal">
+        <p class="eyebrow">CARA SAYA BEKERJA</p>
+        <h2>Simple process. <em>Clean result.</em></h2>
+        <div class="process">
+          <div class="process-item"><span>01</span><div><b>Pahami masalah</b><p>Memecah kebutuhan menjadi bagian kecil sebelum mulai ngoding.</p></div></div>
+          <div class="process-item"><span>02</span><div><b>Bangun fondasi</b><p>Struktur HTML, database, dan logic dibuat rapi sejak awal.</p></div></div>
+          <div class="process-item"><span>03</span><div><b>Poles pengalaman</b><p>Responsif, spacing, interaksi, lalu memastikan semuanya tetap ringan.</p></div></div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="reveal" id="contact">
         <p class="eyebrow">TEMUKAN SAYA</p>
         <h2>Sosial Media</h2>
         <p class="desc">Tempat lain buat nemuin gue di internet.</p>
 
         <div class="socials">
-          <a class="social" href="https://www.instagram.com/rr4sz._/" target="_blank" rel="noopener noreferrer">
-            <span class="icon">IG</span><span class="social-text"><b>Instagram</b><small>@rr4sz._</small></span><span class="arrow">↗</span>
-          </a>
-          <a class="social" href="https://wa.me/6285939730418?text=Halo%20Rasya!%2C%20Lagi%20Sibuk%20Ga%20Nih%3F" target="_blank" rel="noopener noreferrer">
-            <span class="icon">WA</span><span class="social-text"><b>WhatsApp</b><small>+62 859-3973-0418</small></span><span class="arrow">↗</span>
-          </a>
-          <button class="social" id="discordButton" type="button">
-            <span class="icon">DC</span><span class="social-text"><b>Discord</b><small>morasainz.</small></span><span class="arrow">⧉</span>
-          </button>
+          <a class="social" href="https://www.instagram.com/rr4sz._/" target="_blank" rel="noopener noreferrer"><span class="icon">IG</span><span class="social-text"><b>Instagram</b><small>@rr4sz._</small></span><span class="arrow">↗</span></a>
+          <a class="social" href="https://wa.me/6285939730418?text=Halo%20Rasya!%2C%20Lagi%20Sibuk%20Ga%20Nih%3F" target="_blank" rel="noopener noreferrer"><span class="icon">WA</span><span class="social-text"><b>WhatsApp</b><small>+62 859-3973-0418</small></span><span class="arrow">↗</span></a>
+          <button class="social" id="discordButton" type="button"><span class="icon">DC</span><span class="social-text"><b>Discord</b><small>morasainz.</small></span><span class="arrow">⧉</span></button>
+        </div>
+
+        <div class="contact-cta">
+          <span class="cta-dot"></span>
+          <div><b>Open for opportunities</b><p>Project, collaboration, atau sekadar ngobrol soal web development.</p></div>
+          <a href="mailto:rasyaahmadkhadafi14@gmail.com">Email ↗</a>
         </div>
       </section>
 
       <div class="divider"></div>
 
-      <section>
+      <section class="reveal">
         <p class="eyebrow">CONTACT</p>
         <div class="contacts">
           <div><span>Gmail</span><a href="mailto:rasyaahmadkhadafi14@gmail.com">rasyaahmadkhadafi14@gmail.com</a></div>
@@ -114,11 +155,12 @@
         </div>
       </section>
 
-      <footer><span>© 2026 Rasyaa</span><span>Built with HTML & CSS</span></footer>
+      <footer><span>© 2026 Rasyaa</span><span>Built with HTML, CSS & JS</span></footer>
     </section>
   </main>
 
   <div class="toast" id="toast"></div>
+  <button class="back-top" id="backTop" aria-label="Kembali ke atas">↑</button>
   <script src="script.js"></script>
 </body>
 </html>
